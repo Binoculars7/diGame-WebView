@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Last Decision</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		var startElement;
+		var endElement;
+		var error_status;
+		var intro_field;
+		var intro_label;
+		var error_status_change;
+
+		$(document).ready(function(){
+			$('#intro_field').keyup(function(){
+				var intro_field = $('#intro_text_field').val();
+				if (intro_field == '') {
+					error_status = 1;
+					error_status_change = 0;
+					return error_status;
+				}else{
+					error_status = 0;
+					error_status_change = 1;
+					return error_status;
+
+				}
+			});
+
+			if (error_status == 1) {
+				startElement = 'b0x54essStart';
+				startElement = 'Name of the start element is b0x54essStart';
+				$('#intro_label').text(startElement);
+			}else{
+				endElement = 'b0x54essEnd';
+				endElement = 'Name of the end element is b0x54essEnd';
+				$('#intro_label').text(endElement);
+				$('#intro_label').text(endElement);
+				$('#intro_label').text(endElements);
+			}
+
+			// redesign
+			$('#intro_label').css('display', 'block');
+			$('#intro_label').css('background', 'navy');
+			$('#intro_label').css('color', 'white');
+			$('#intro_label').css('margin', '3px');
+			$('#intro_label').css('padding', '1px');
+			$('#intro_label').css('font', 'bold 20px calibri');
+			$('#intro_label')..css('box-shadow', '0 0 5px grey');
+
+			$('#intro_field').css('background', 'grey');
+			$('#intro_field').css('color', 'white');
+			$('#intro_field').css('margin', '0');
+			$('#intro_field').css('padding', '0');
+			$('#intro_field').css('display', 'block');
+			$('#intro_field').css('font', 'bold 20px calibri');
+
+
+
+
+		});
+	</script>
+
+</body>
+</html>
